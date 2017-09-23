@@ -25,7 +25,7 @@ function drop(textfield) {
     
     var op = 1.0;
     var pos = 170;
-    var id = setInterval(frame, 10);
+    var id = setInterval(frame, 1);
     var exitPos = 800;
     function frame() {
         if (pos == exitPos) {
@@ -34,9 +34,9 @@ function drop(textfield) {
         } else {
             pos++;
             char.style.top = pos + 'px';
-            
-            if (pos % 25 == 0) {
-                char.style.opacity = op;
+            clone.style.top = pos + 'px';
+            if (pos % 2 == 0) {
+               // char.style.opacity = op;
                 op -= 0.1;
             }
         }

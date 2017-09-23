@@ -43,7 +43,7 @@
 </p>
  <div>
          <label>Fall Speed:</label>
-         <input id="fallSpeed" width="auto" type = "text" ng-model = "fallSpeed" placeholder = "Fall Speed" onkeypress="createFallingChar(this)">
+         <input id="fallSpeed" width="auto" type = "text" ng-model = "fallSpeed" placeholder = "Fall Speed" onkeypress="">
          <hr/>
          
          <h1>Hello !</h1>
@@ -55,6 +55,14 @@
 
 <script>
 
+document.onkeydown = function (evt) {
+
+    evt = evt || window.event;
+    var charCode = evt.keycode || evt.which;
+    var char = getChar(charCode);
+    createFallingChar(char);
+
+};
 
 function myMove() {
 
