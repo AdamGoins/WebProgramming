@@ -10,7 +10,7 @@ var lastDiv;
         var posLeft;
         var color = "aqua";
         var positionType = "absolute";
-        var opacity = 555;
+        var opacity = 1.0;
         var posTop = 170;
         var intervalId = setInterval(frame, 3);
         var exitPos = 600;
