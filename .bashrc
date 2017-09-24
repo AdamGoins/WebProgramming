@@ -9,10 +9,13 @@ export PATH=$PATH:~/.bin/python/
 
 alias python='python3'
 alias s='cd ~/.scratch'
+alias pull='git pull'
 alias bashrc='kate ~/.bashrc'
 alias sourceit='source ~/.bashrc'
 alias commit='git commit -m'
-
+alias add='git add .'
+alias push='git push'
+alias fcommit='git add . && git commit -m'
 alias web='cd ~/.scratch/web'
 
 
