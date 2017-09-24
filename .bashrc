@@ -11,6 +11,7 @@ alias python='python3'
 alias s='cd ~/.scratch'
 alias bashrc='kate ~/.bashrc'
 alias sourceit='source ~/.bashrc'
+alias commit='git commit -m'
 
 alias web='cd ~/.scratch/web'
 
