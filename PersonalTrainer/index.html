@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+<body ng-app="index">
+
+<p><a href="#/">Main</a></p>
+
+<a href="#!london">City 1</a>
+<a href="#!paris">City 2</a>
+
+<p>This should be the content!</p>
+
+<div ng-view>
+
+    
+
+</div>
+
+<script>
+var app = angular.module("index", ["ngRoute"]);
+app.config( function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "views/landing/landing.html"
+    })
+    .when("/home", {
+        templateUrl : "views/home/home.html"
+    })
+});
+</script>
+
+</body>
+</html> 
